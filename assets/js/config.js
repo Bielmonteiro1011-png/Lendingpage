@@ -1,3 +1,2 @@
-// Antes de publicar, informe o WhatsApp comercial com país + DDD + número.
-// Apenas dígitos. Não coloque +, espaços, parênteses ou traços.
-window.LARZELO_CONFIG = Object.freeze({ whatsappNumber: '' });
+// WhatsApp comercial: Brasil + DDD 81 + número.
+window.LARZELO_CONFIG = Object.freeze({ whatsappNumber: '5581994724760' });

@@ -6,13 +6,13 @@ Site estático em português, sem instalação de dependências e sem etapa de b
 
 Na consulta de 01/10/2026 UTC (30/09 em Recife), a API informou default_branch main, size 0 e retornou “This repository is empty.” ao consultar o conteúdo. Não existiam arquivos para reaproveitar. A versão inicial foi preparada para publicação; veja os commits e a hospedagem para o estado atual.
 
-## Antes de publicar: configure seu WhatsApp
+## Configuração atual
 
-Edite `assets/js/config.js` e preencha `whatsappNumber` com o número comercial real, somente dígitos, incluindo 55 + DDD + número. Mantenha as aspas. Exemplo de formato: 55DDDNÚMERO (substitua todo o conteúdo por dígitos reais; não use este texto).
+WhatsApp comercial: (81) 99472-4760. Atendimento exclusivamente em Caruaru/PE. O contato pode ser alterado em `assets/js/config.js`.
 
-O valor vazio é intencional: nenhum número foi fornecido. Enquanto não for preenchido, o botão flutuante leva ao formulário e a tentativa de envio informa que o contato ainda está em configuração. Não inventamos um destinatário. Depois de configurar, os links usam `https://wa.me/NUMERO?text=MENSAGEM`.
+A versão pública do repositório usa a logo; o retrato está somente na hospedagem privada, aguardando autorização para exposição pública. O formulário permite até 10 tipos de peças no mesmo pedido, com quantidade por item, lugares/modelo para sofás e tamanho para colchões. Não calcula preço ou grava dados. O visitante confirma o envio dentro do WhatsApp; as fotos são enviadas na conversa.
 
-O formulário prepara nome opcional, serviço, quantidade, bairro e observação. As fotos são enviadas na conversa. Ele NÃO calcula preço, NÃO salva cadastros e NÃO envia mensagem automaticamente: o visitante confirma o envio dentro do WhatsApp. Não há banco de dados, cookies de rastreamento ou dependências remotas.
+A galeria antes/depois aguarda fotos reais. A audiência da hospedagem permanece privada até liberação do proprietário.
 
 ## Arquivos
 
@@ -27,7 +27,7 @@ O formulário prepara nome opcional, serviço, quantidade, bairro e observação
 | `.nojekyll` | Publicação de arquivos estáticos no GitHub Pages |
 | `.gitignore` | Exclusão de arquivos locais desnecessários |
 
-A identidade desta versão combina verde profundo, marfim, detalhes em verde claro e títulos com contraste tipográfico. O nome em texto e o símbolo são uma proposta inicial, não uma reprodução do arquivo da logo aprovada. As ilustrações não representam atendimentos realizados. Substitua-as por fotos próprias quando disponíveis. Não foram inventados depoimentos, avaliações, preços, resultados ou garantias.
+A identidade desta versão combina verde profundo, marfim, detalhes em verde claro e títulos com contraste tipográfico. A logo oficial enviada está aplicada no cabeçalho, rodapé e favicon. A marca está aplicada na abertura desta versão do repositório; não há imagens de resultados inventados. Não foram inventados depoimentos, avaliações, preços, resultados ou garantias.
 
 ## Aplicar pelo navegador
 
@@ -82,3 +82,7 @@ Abra http://localhost:8000. Para interromper, Ctrl+C.
 ## Verificações realizadas
 
 Passaram a checagem de sintaxe JavaScript, referências locais, âncoras, IDs únicos e leitura dos SVGs. A lógica do formulário foi executada em DOM simulado, cobrindo contato ausente, campos, acentos, codificação da URL e link alternativo. Nenhuma mensagem foi enviada. A conferência visual em navegador não pôde ser concluída: não havia navegador instalado e o download do Chromium falhou. Portanto, confira a aparência e o fluxo no seu celular antes de divulgar.
+
+## Validação da versão 2
+
+Sintaxe JavaScript, âncoras, IDs e arquivos locais verificados. A conferência visual e o teste de interação em navegador continuam pendentes por indisponibilidade do navegador no ambiente.
