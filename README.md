@@ -10,7 +10,7 @@ Na consulta de 01/10/2026 UTC (30/09 em Recife), a API informou default_branch m
 
 WhatsApp comercial: (81) 99472-4760. Atendimento exclusivamente em Caruaru/PE. O contato pode ser alterado em `assets/js/config.js`.
 
-A versão pública do repositório usa a logo; o retrato está somente na hospedagem privada, aguardando autorização para exposição pública. O formulário permite até 10 tipos de peças no mesmo pedido, com quantidade por item, lugares/modelo para sofás e tamanho para colchões. Não calcula preço ou grava dados. O visitante confirma o envio dentro do WhatsApp; as fotos são enviadas na conversa.
+A versão 2 usa a logo e o retrato fornecidos pelo proprietário. O formulário permite até 10 tipos de peças no mesmo pedido, com quantidade por item, lugares/modelo para sofás e tamanho para colchões. Não calcula preço ou grava dados. O visitante confirma o envio dentro do WhatsApp; as fotos são enviadas na conversa.
 
 A galeria antes/depois aguarda fotos reais. A audiência da hospedagem permanece privada até liberação do proprietário.
 
@@ -27,7 +27,7 @@ A galeria antes/depois aguarda fotos reais. A audiência da hospedagem permanece
 | `.nojekyll` | Publicação de arquivos estáticos no GitHub Pages |
 | `.gitignore` | Exclusão de arquivos locais desnecessários |
 
-A identidade desta versão combina verde profundo, marfim, detalhes em verde claro e títulos com contraste tipográfico. A logo oficial enviada está aplicada no cabeçalho, rodapé e favicon. A marca está aplicada na abertura desta versão do repositório; não há imagens de resultados inventados. Não foram inventados depoimentos, avaliações, preços, resultados ou garantias.
+A identidade desta versão combina verde profundo, marfim, detalhes em verde claro e títulos com contraste tipográfico. A logo oficial enviada está aplicada no cabeçalho, rodapé e favicon. O retrato original do proprietário está aplicado na abertura; não há imagens de resultados inventados. Não foram inventados depoimentos, avaliações, preços, resultados ou garantias.
 
 ## Aplicar pelo navegador
 
@@ -86,3 +86,13 @@ Passaram a checagem de sintaxe JavaScript, referências locais, âncoras, IDs ú
 ## Validação da versão 2
 
 Sintaxe JavaScript, âncoras, IDs e arquivos locais verificados. A conferência visual e o teste de interação em navegador continuam pendentes por indisponibilidade do navegador no ambiente.
+
+## Galeria, depoimentos, navegação e sitemap
+
+- Galeria em `#galeria`: fotos disponíveis da marca e do proprietário. Não representa resultados de serviços. Clique abre lightbox que ocupa a viewport; há botões anterior/próxima, setas do teclado, Escape, retorno de foco e gestos de deslizar. O dialog nativo contém o foco enquanto aberto; sem suporte, o link abre a imagem normalmente.
+- Depoimentos em `assets/js/content.js`: insira apenas relatos reais autorizados com campos `name`, `text` e, opcionalmente, `service`. Lista vazia mantém a seção oculta. Duas ou mais entradas ativam intervalo de 5000ms, com pausa por botão, foco, hover e aba oculta. Movimento reduzido começa pausado. Uma entrada não gira. Textos são inseridos como texto, não HTML.
+- Header responsivo em Tailwind: logo à esquerda, navegação central e CTA à direita no desktop; menu expansível no celular; permanece no topo. O CSS compilado está incluído: a hospedagem não precisa executar npm ou carregar CDN. Para recompilar, `npm install` e `npm run build:css`.
+- Scroll: JavaScript vanilla para âncoras; IntersectionObserver revela seções e cards. Sem suporte, conteúdo permanece visível. Movimento reduzido é respeitado.
+- `sitemap.xml`: sitemap padrão com a única página pública real. Seções com âncoras não são páginas separadas. `mapa-estrutura.xml` documenta a hierarquia editorial dessas seções e serviços; não é submetido a mecanismos de busca. `robots.txt` indica o endereço do sitemap.
+
+Nota do repositório público: a foto do proprietário permanece exclusivamente na hospedagem; esta versão da galeria usa a logo, sem referência a um arquivo ausente.

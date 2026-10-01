@@ -1,0 +1,7 @@
+{
+  "name": "larzelo-landingpage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {"build:css": "tailwindcss -i assets/css/header-source.css -o assets/css/header-tailwind.css --minify"},
+  "devDependencies": {"tailwindcss": "4.3.3", "@tailwindcss/cli": "4.3.3"}
+}

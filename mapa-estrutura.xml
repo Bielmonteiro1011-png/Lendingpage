@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mapa editorial da hierarquia. Não é um sitemap para motores de busca. -->
+<site url="https://larzelo-cuidado.biel-monteiro-1011.chatgpt.site/">
+  <pagina titulo="Larzelo" caminho="/">
+    <secao titulo="Início" ancora="inicio"/>
+    <secao titulo="Serviços" ancora="servicos">
+      <servico titulo="Higienização de sofás"/>
+      <servico titulo="Higienização de colchões"/>
+      <grupo titulo="Serviços adicionais sob consulta"/>
+    </secao>
+    <secao titulo="Como funciona" ancora="cuidado"/>
+    <secao titulo="Galeria" ancora="galeria"/>
+    <secao titulo="Depoimentos" ancora="depoimentos" estado="aguardando-relatos-reais"/>
+    <secao titulo="Dúvidas" ancora="duvidas"/>
+    <secao titulo="Orçamento" ancora="orcamento"/>
+  </pagina>
+</site>
