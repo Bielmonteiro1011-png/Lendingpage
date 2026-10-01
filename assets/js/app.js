@@ -18,7 +18,7 @@
   document.addEventListener('click', event => { if(!event.target.closest('.header')) closeMenu(); });
   document.querySelector('#year').textContent = new Date().getFullYear();
   document.querySelectorAll('[data-whatsapp]').forEach(link => {
-    if(configured) {link.href=urlFor('Olá, Larzelo! Gostaria de um orçamento para higienização em Caruaru.');link.target='_blank';link.rel='noopener noreferrer';}
+    if(configured) {link.href=urlFor('Olá, Larzelo! Gostaria de um orçamento para higienização em Caruaru.');link.removeAttribute('target');link.rel='noopener noreferrer';}
   });
   let sequence=0;
   function refreshItems(){
@@ -68,6 +68,6 @@
       return `${index+1}. ${fields.join(' · ')}`;
     });
     const message=['Olá, Larzelo! Gostaria de um orçamento.',name?`Nome: ${name}`:'',...pieces,`Bairro: ${district} — Caruaru/PE`,notes?`Detalhes: ${notes}`:'','Vou enviar fotos das peças para avaliação.'].filter(Boolean).join('\n');
-    const url=urlFor(message);status.replaceChildren();const fallback=document.createElement('a');fallback.href=url;fallback.target='_blank';fallback.rel='noopener noreferrer';fallback.textContent='Mensagem preparada. Se o WhatsApp não abrir, toque aqui.';status.append(fallback);window.open(url,'_blank','noopener,noreferrer');
+    const url=urlFor(message);status.replaceChildren();const fallback=document.createElement('a');fallback.href=url;fallback.rel='noopener noreferrer';fallback.textContent='Mensagem preparada. Se o WhatsApp não abrir, toque aqui.';status.append(fallback);window.location.assign(url);
   });
 })();
